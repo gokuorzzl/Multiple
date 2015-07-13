@@ -1,12 +1,8 @@
 def sum_3_or_5(n):
     result = 0
     for i in range(2, n+1):
-        if i % 3 == 0:
+        if i % 3 == 0 or i % 5 == 0:
             result += i
-        if i % 5 == 0:
-            result += i
-        if i % 3 == 0 and i % 5 == 0:
-            result -= i
     return result
 
 
@@ -17,4 +13,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
